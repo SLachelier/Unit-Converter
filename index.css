@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+#entry-container { /*container for input box, button and title*/
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #6F4FE4;
+}
+
+h1 { /*title*/
+  padding-bottom: 20px;
+  color: white;
+}
+
+input { /*input box*/
+  background-color: transparent;
+  border: 2px solid white;
+  opacity: 0.4;
+  width: 100px;
+  height: 75px;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+input:focus { /*removes outline on focus*/
+  outline: none;
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button, /*removes up and down arrows*/
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+#convert-btn { /*convert button*/
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  width: 105px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+#results-container { /*container for all results*/
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: lightgray;
+  margin: 0px;
+}
+
+.results { /*each individual result box*/
+  color: #8062ED;
+  background-color: white;
+  width: 80%;
+  height: 125px;
+  margin: 20px;
+  padding: 15px;
+}
+
